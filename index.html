@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Wad: Job Hunt</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/x-icon" href="images/logob.png">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Crimson+Text:ital,wght@0,700;1,600&family=Montserrat:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header class="header" id="header">
+        <div class="logo">
+            <a href="index.html">
+                <div class="tree">
+                    <i class='bx bx-search-alt'></i>
+                </div>
+                <div>
+                    <h4>WAD</h4>
+                </div>
+            </a>
+        </div>
+        <div class="hamburger">
+            <div class="line">
+                <i class="bx bx-menu bx-lg"></i>   
+            </div>
+            <div class="x">
+                <i class='bx bx-x bx-lg'></i>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="pay.html">PAY</a></li>
+                <li><a href="vacancies.html">VACANCIES</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="script.js"></script>
+
+    <main id="index">
+        <div class="bg-image">     
+            <div class="banner-con">
+                <h1> Job Seeker!</h1>
+                <form class="banner-search"action="vacancies.html">
+                    <input type="text" id="searchInput" placeholder="Enter job title..." required>
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+      
+        <div class="container">
+            <h2> Our <span class="highlight"> Features </span> </h2>
+            <div class="features">
+                <div>
+                    <img src="https://plus.unsplash.com/premium_photo-1678567671227-fc52dc1e307f?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <h3>Wage Calculator</h3>
+                    <p>Make smarter career choices with our wage comparison and calculation tool! Quickly calculate your salary, compare it to industry norms, and confidently navigate your career path with essential market insights.</p>
+                    <div class="button">
+                        <a href="pay.html"> Try Now >></a>  
+                    </div>  
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <h3>Job Search</h3>
+                    <p>Looking for your dream job? Find the next step in your career with our comprehensive job listings. Tailor your search to find the perfect role that matches your skills and aspirations.</p>
+                    <div class="button">
+                        <a href="vacancies.html"> Try Now >></a>  
+                    </div>  
+                </div>
+            </div>
+        </div>
+       
+    
+        <ul id="resultsList"></ul>
+
+
+        
+
+        <script src="script.js"></script>
+    </main>
+    <footer>
+        <p>copyrights</p>
+    </footer>   
+   
+</body>
+</html>

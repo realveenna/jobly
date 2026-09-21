@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Wad: Job Hunt</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/x-icon" href="images/logob.png">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Crimson+Text:ital,wght@0,700;1,600&family=Montserrat:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header class="header" id="header">
+        <div class="logo">
+            <a href="index.html">
+                <div class="tree">
+                    <i class='bx bx-search-alt'></i>
+                </div>
+                <div>
+                    <h4>WAD</h4>
+                </div>
+            </a>
+        </div>
+        <div class="hamburger">
+            <div class="line">
+                <i class="bx bx-menu bx-lg"></i>   
+            </div>
+            <div class="x">
+                <i class='bx bx-x bx-lg'></i>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="pay.html">PAY</a></li>
+                <li><a href="vacancies.html">VACANCIES</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="script.js"></script>
+    <main id="pay">
+        <div class="pay-container">
+            <div class="bg-image">
+                <div class="main-banner-con">
+                    <div class="banner-text">
+                        <h2> Wage Calculator </h2>
+                        <p> Make smarter career choices with our wage comparison and calculation tool! Quickly calculate your salary, compare it to industry norms, and confidently navigate your career path with essential market insights.</p>
+                    </div> 
+                    <form id="wageForm">
+                        <div class="form two-cols">
+                            <div class="form-column">
+                                <input type="text" id="searchInput" placeholder="Job Title" name="jobTitle" required>
+                            </div>   
+                            <div class="form-column">
+                                <input type="number" id="wages" placeholder="Wages" name="wages" required>
+                            </div>   
+                        </div>
+    
+                        <div class="form three-cols">
+                            <div class="form-column">
+                                <select id="timeframe" name="timeframe" required>
+                                    <option value="" disabled selected>Pay Timeframe</option>    
+                                    <option value="year">Year</option>
+                                    <option value="month">Month</option>
+                                    <option value="week">Week</option>
+                                    <option value="hour">Hour</option>
+                                </select>
+                            </div>
+                            <div class="form-column">
+                                <input type="number" id="hours" placeholder="Hours per week" name="hours" required>
+                            </div> 
+                            <div class="form-column">
+                                <div class="button">
+                                    <input type="button" value="Calculate" onclick="calculateWages()">
+                                </div>
+                            </div>
+                        </div> 
+                    </form>
+                </div>
+            </div>
+            <div class="container">
+                    <h2> Calculation <span class='highlight'> Result </span> </h2>
+                    <ul id="resultsList"></ul>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <p>copyrights</p>
+    </footer>   
+   
+</body>
+</html>

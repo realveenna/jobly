@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Wad: Job Hunt</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/x-icon" href="images/logob.png">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Crimson+Text:ital,wght@0,700;1,600&family=Montserrat:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header class="header" id="header">
+        <div class="logo">
+            <a href="index.html">
+                <div class="tree">
+                    <i class='bx bx-search-alt'></i>
+                </div>
+                <div>
+                    <h4>WAD</h4>
+                </div>
+            </a>
+        </div>
+        <div class="hamburger">
+            <div class="line">
+                <i class="bx bx-menu bx-lg"></i>   
+            </div>
+            <div class="x">
+                <i class='bx bx-x bx-lg'></i>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="pay.html">PAY</a></li>
+                <li><a href="vacancies.html">VACANCIES</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="vacancies">
+        <div class="bg-image">
+            <div class="main-banner-con">
+                <div class="banner-text">
+                    <h2>Job Search</h2>
+                    <p>Looking for your dream job? Find the next step in your career with our comprehensive job listings. Tailor your search to find the perfect role that matches your skills and aspirations.</p>
+                </div> 
+                <form id="searchForm" >
+                    <div class="form one-cols">
+                        <div class="form-column">
+                            <input type="text" id="searchInput" placeholder="Enter job title...">
+                        </div>     
+                    </div>
+                    <div class="form two-cols">
+                        <div class="form-column">
+                            <input type="text" id="locationInput" placeholder="Location">
+                        </div>
+                        <div class="form-column">
+                            <div class="button">
+                                <input type="button" value="Search" onclick="searchVacanciesInput()">>
+                            </div>
+                        </div>
+                    </div> 
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <div class="descriptionResult"></div>
+            <div id="jobResults"></div> 
+        </div>
+    </main>
+    <footer>
+        <p>Copyrights</p>
+    </footer>  
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+
+</body>
+</html>
